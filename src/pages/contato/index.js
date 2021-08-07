@@ -1,18 +1,15 @@
 import React from 'react';
-import Header from '../../components/header/index.js'
-import ContatoForm from '../../components/contato/index.js';
+import Header from '../../components/header'
+import ContatoForm from '../../components/contato';
 
-import '../../App.css';
-import '../../reset.css';
+import { ContatoStyle } from './style/style';
 
 function Contato() {
   return (
-
-    <div>
+    <ContatoStyle>
       <Header />
       <ContatoForm />      
-    </div>
-    
+    </ContatoStyle>
   );
 }
 
